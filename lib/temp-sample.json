@@ -1,0 +1,18 @@
+{
+    "corrected_temp": 22.480812700311112,
+    "cpu_temp": 47.680812700311115,
+    "engineers": "Lin Zhang; Mihai Criveti",
+    "fqdn": "raspberrypi",
+    "humidity": 42.148377092400956,
+    "latitude": 53.87401140031111,
+    "location": "Dublin",
+    "longitude": -6.3771932,
+    "pi_ver": "Raspberry Pi 3 Model B Rev 1.2",
+    "pressure": 992.9732443409362,
+    "project": "foxie",
+    "sealevel": 62,
+    "sensorid": 1,
+    "temperature": 30.98337140850203,
+    "timestamp": "2018-04-21 12:18:11.968433",
+    "tz": "Etc/UTC"
+}
