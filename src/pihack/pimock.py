@@ -7,9 +7,9 @@ from a Raspberry Pi with sensehat.
 import json
 from datetime import datetime
 from random import random
-from .config import *
+from pihack.config import *
 
-def get_pi_info():
+def get_pi_mock():
     variance = random()
     mockup = {
         "uuid": UUID,
@@ -34,4 +34,4 @@ def get_pi_info():
     return json.dumps(mockup, indent=4)
 
 if __name__ == "__main__":
-    print(get_pi_info())
+    print(get_pi_mock())

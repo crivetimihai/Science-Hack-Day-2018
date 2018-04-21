@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/api/pi')
 def api_pi():
-    pi = pimock.get_pi_info()
+    pi = pimock.get_pi_mock()
     response = app.response_class(
         response = pi,
         status = 200,
