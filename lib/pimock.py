@@ -7,10 +7,12 @@ from a Raspberry Pi with sensehat.
 import json
 from datetime import datetime
 from random import random
+from config import *
 
 def get_pi_info():
     variance = random()
     mockup = {
+        "uuid": UUID,
         "corrected_temp": 22 + variance,
         "cpu_temp": 47.2 + variance,
         "engineers": "Lin Zhang; Mihai Criveti",
