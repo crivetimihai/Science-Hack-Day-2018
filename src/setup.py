@@ -6,6 +6,6 @@ from setuptools import setup
 
 setup(
     package_dir={'': 'src'},
-    packages=['pimock'],
-    install_requires=['jsonschema'],
+    packages=['pihack'],
+    install_requires=['sense-hat'],
 )
