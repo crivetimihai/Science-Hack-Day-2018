@@ -1,1 +1,1 @@
-from .pimock import *
+from .pimock import get_pi_info
