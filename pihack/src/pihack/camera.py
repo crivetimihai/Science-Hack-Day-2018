@@ -20,11 +20,8 @@ def get_image():
     print(idir)
     sleep(1)
     camera.capture(idir)
-    #
+
     with open(idir,'rb') as fimage:
         f = fimage.read()
         b = bytearray(f)
     return b
-
-
-

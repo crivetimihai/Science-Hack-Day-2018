@@ -33,5 +33,10 @@ def get_pi_mock():
 
     return json.dumps(mockup, indent=4)
 
+def get_image():
+    with open('fox.png', 'rb') as fimage:
+        data = fimage.read()
+    return bytearray(data)
+
 if __name__ == "__main__":
     print(get_pi_mock())

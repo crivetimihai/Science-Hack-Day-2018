@@ -18,7 +18,7 @@ PI_TZ_FILE = '/etc/timezone'
 PI_CPUTEMP_CMD = '/opt/vc/bin/vcgencmd measure_temp'
 
 # Read data from config.py
-from .config import *
+from pihack.config import *
 
 sense = SenseHat()
 
@@ -136,7 +136,7 @@ def get_corrected_temp():
 def get_pi_info():
     """Returns Pi data and sensor information as JSON
 
-    >>> get_pi_info()
+    >>> json.loads(get_pi_info())
     {...}
     """
     pi_info = {
@@ -158,11 +158,10 @@ def get_pi_info():
         'humidity'       : get_humidity(),
         'pressure'       : get_pressure()
     }
-    return pi_info
+    return json.dumps(pi_info)
 
 
 if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose=False, optionflags=doctest.ELLIPSIS)
     print(get_pi_info())
-
