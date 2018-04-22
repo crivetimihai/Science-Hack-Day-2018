@@ -1,0 +1,35 @@
+GET Requests:
+
+All objects under {uuid}:
+GET https://saturday-ed989.firebaseio.com/{uuid}.json
+
+Certain object under {uuid} by {object-id}:
+GET https://saturday-ed989.firebaseio.com/{uuid}/{object-id}.json
+
+Certain value of a {key} in {object-id} under {uuid}:
+GET https://saturday-ed989.firebaseio.com/{uuid}/{object-id}/{key}.json
+
+Get objects under {uuid} ordered by timestamp from {start} to {end}:
+GET https://saturday-ed989.firebaseio.com/{uuid}.json?orderBy="timestamp"&startAt="{start}"&endAt="{end}"
+
+Get objects under {uuid} ordered by timestamp from either first or last {number}:
+GET https://saturday-ed989.firebaseio.com/{uuid}.json?orderBy="timestamp"&limitToFirst={number}
+GET https://saturday-ed989.firebaseio.com/{uuid}.json?orderBy="timestamp"&limitToLast={number}
+
+POST Requests:
+
+Post an object to {uuid}:
+POST https://saturday-ed989.firebaseio.com/{uuid}.json
+
+Body: The data that is going to push to the database.
+Header:
+  "Content-Type": "application/json"
+
+PUT Requests:
+
+Modify the value of a {key} in an {object-d} of {uuid}:
+PUT https://saturday-ed989.firebaseio.com/{uuid}/{object-id}/{key}.json
+
+Body: The new value of {key}.
+Header:
+  "Content-Type": "application/json"
