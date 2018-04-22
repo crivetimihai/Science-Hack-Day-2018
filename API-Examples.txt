@@ -1,5 +1,8 @@
 GET Requests:
 
+All objects under all {uuid}:
+GET https://saturday-ed989.firebaseio.com/.json
+
 All objects under {uuid}:
 GET https://saturday-ed989.firebaseio.com/{uuid}.json
 
@@ -27,7 +30,7 @@ Header:
 
 PUT Requests:
 
-Modify the value of a {key} in an {object-d} of {uuid}:
+Modify the value of a {key} in an {object-id} of {uuid}:
 PUT https://saturday-ed989.firebaseio.com/{uuid}/{object-id}/{key}.json
 
 Body: The new value of {key}.
