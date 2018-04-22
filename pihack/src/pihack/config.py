@@ -1,6 +1,6 @@
 # Configuration file to set project wide settings
 PROJECT='foxie'
-ENGINEERS=["Lin Zhang", "Mihai Criveti"]
+ENGINEERS=["Lin Zhang", "Mihai Criveti", "Shailesh Wadhwa"]
 LOCATION='Dublin'
 LATITUDE=53.3931987
 LONGITUDE=-6.3771932
