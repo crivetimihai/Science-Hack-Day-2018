@@ -27,7 +27,7 @@ Header:
 
 PUT Requests:
 
-Modify the value of a {key} in an {object-d} of {uuid}:
+Modify the value of a {key} in an {object-id} of {uuid}:
 PUT https://saturday-ed989.firebaseio.com/{uuid}/{object-id}/{key}.json
 
 Body: The new value of {key}.
